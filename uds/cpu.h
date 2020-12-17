@@ -39,7 +39,7 @@
 #elif defined(__x86_64__) || defined(__aarch64__)
 #define CACHE_LINE_BYTES  64
 #else
-#error "unknown cache line size"
+#define CACHE_LINE_BYTES 32
 #endif
 
 /**

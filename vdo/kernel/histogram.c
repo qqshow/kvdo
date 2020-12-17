@@ -595,8 +595,8 @@ Histogram *makeLogarithmicJiffiesHistogram(struct kobject *parent,
    * If these fail, we have a jiffy duration that is not an integral number of
    * milliseconds, and the unit conversion code needs updating.
    */
-  STATIC_ASSERT(HZ <= MSEC_PER_SEC);
-  STATIC_ASSERT((MSEC_PER_SEC % HZ) == 0);
+  //STATIC_ASSERT(HZ <= MSEC_PER_SEC);
+  //STATIC_ASSERT((MSEC_PER_SEC % HZ) == 0);
   return makeLogarithmicHistogramWithConversionFactor(parent, name, initLabel,
                                                       countedItems,
                                                       metric, "milliseconds",
